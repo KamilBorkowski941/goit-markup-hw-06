@@ -605,28 +605,104 @@
               </li>
             </ul>
           </div>
+          <div>
+            <h4 class="sign-up-header">Sign Up for newsletter</h4>
+            <input type="text" class="sign-up" placeholder="E-mail" />
+            <button type="submit" class="sign-up-button">
+              Sign up
+              <svg class="sign-up-button-logo">
+                <use
+                  xlink:href="./images/symbol-defs.svg#sign-up-button"
+                  width="24"
+                  height="24"
+                  x="20"
+                  y="0"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </section>
       </footer>
       <!--informacje bazowe na temat firmy- tak zwany footer-->
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <div class="modal-header">
-            <div class="title">Popup Modal</div>
+        <div class="order">
+          <div class="order-header">
+            <div class="title">Fill Out an Order Form</div>
             <button class="close-button" data-modal-close>&times;</button>
           </div>
-          <div class="modal-body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            totam exercitationem assumenda minus nisi. Corrupti laboriosam,
-            pariatur vitae iure quis repudiandae placeat optio consequuntur
-            culpa tempora nemo vel saepe dicta perspiciatis quam impedit
-            voluptatibus molestias aliquid dolorum tempore nihil commodi
-            necessitatibus rem! Eligendi tempora ut, adipisci nesciunt animi sed
-            nihil asperiores unde aliquam similique corporis reprehenderit fuga,
-            laborum sapiente omnis, magnam nisi totam consequatur voluptate?
-            Eaque fuga explicabo in minus perspiciatis doloremque nihil minima
-            assumenda. Voluptatibus tenetur odit sapiente sit ut. Sunt expedita
-            fuga voluptas quo exercitationem illum?
-          </div>
+          <label for="order-name" class="order-hover">
+            Name
+            <svg class="person-contacts">
+              <use
+                xlink:href="./images/symbol-defs.svg#icon-person-contacts"
+                width="12"
+                height="12"
+              ></use>
+            </svg>
+            <input
+              type="text"
+              name="user-name"
+              class="order-input"
+              id="order-name"
+            />
+          </label>
+          <label for="order-moble">
+            Mobile
+            <svg class="person-contacts">
+              <use
+                xlink:href="./images/symbol-defs.svg#icon-phone-contacts"
+                width="13"
+                height="13"
+              ></use>
+            </svg>
+            <input
+              type="text"
+              name="user-name"
+              class="order-input"
+              id="order-moble"
+            />
+          </label>
+          <label for="order-email">
+            E-mail
+            <svg class="person-contacts">
+              <use
+                xlink:href="./images/symbol-defs.svg#icon-email-contacts"
+                width="15"
+                height="12"
+              ></use>
+            </svg>
+            <input
+              type="text"
+              name="user-name"
+              class="order-input"
+              id="order-email"
+            />
+          </label>
+          <label>
+            Comment
+            <textarea
+              name="Comment"
+              placeholder="Write your comment..."
+              class="order-input"
+            >
+            </textarea>
+          </label>
+          <label class="terms-contitions">
+            <input type="checkbox" />
+            <svg class="check-contacts">
+              <use
+                xlink:href="./images/symbol-defs.svg#icon-check-contacts"
+                width="11"
+                height="8"
+              ></use>
+            </svg>
+            <span class="check-mark"></span> I have read and accept
+            <a href="#" class="blue-text">Terms</a> and
+            <a href="#" class="blue-text">Conditions of services provision</a>
+          </label>
+          <label>
+            <button type="submit" class="order-button">Send</button>
+          </label>
         </div>
       </div>
     </div>

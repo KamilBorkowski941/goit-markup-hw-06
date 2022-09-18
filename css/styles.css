@@ -197,56 +197,6 @@ ul {
   border-radius: 4px;
   color: #212121;
 }
-.backdrop {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(000, 000, 000, 0.5);
-  position: fixed;
-  transition: all 250ms ease-in;
-}
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid black;
-  border-radius: 10px;
-  z-index: 10;
-  color: black;
-  background-color: white;
-  width: 528px;
-  min-height: 581px;
-}
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 250ms ease-in;
-}
-.modal-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
-}
-.modal-header .title {
-  font-size: 20px;
-  font-weight: bold;
-}
-.modal-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 20px;
-  font-weight: bold;
-}
-.modal-body {
-  padding: 10px 15px;
-}
 
 /* Top
  web section + order button----------------------------------------- */
@@ -550,4 +500,121 @@ address {
   fill: var(--white);
   cursor: pointer;
 }
+.sign-up-header {
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 20px 0 20px 78px;
+  font-weight: 14px;
+}
+.sign-up {
+  background-color: rgba(0, 0, 0, 0);
+  border: solid rgba(255, 255, 255, 0.3) 1px;
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 16px;
+  margin-left: 74px;
+  font-size: 16px;
+}
+.sign-up-button {
+  background-color: var(--blue);
+  color: var(--white);
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  border-style: none;
+  margin-left: 12px;
+  text-align: left;
+  padding-left: 58px;
+  cursor: pointer;
+}
+.sign-up-button-logo {
+  fill: var(--white);
+  position: absolute;
+  width: 50px;
+  height: 24px;
+}
+
 /* footer style> logo + adres + tel+email ----------------------------------*/
+
+.backdrop {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(000, 000, 000, 0.5);
+  position: fixed;
+  transition: all 250ms ease-in;
+}
+.order {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--white);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 10px;
+  color: var(--grey);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 250ms ease-in;
+}
+.order-header {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.172;
+  color: var(--notblack);
+  margin: 40px 0 20px 0;
+}
+.order-header .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.order-header .close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.modal-body {
+  padding: 10px 15px;
+}
+.person-contacts {
+  fill: var(--notblack);
+  width: 15px;
+  height: 13px;
+  position: absolute;
+}
+.order-hover {
+  padding: 10px 15px;
+}
+.modal-body {
+  padding: 10px 15px;
+}
+.modal-body {
+  padding: 10px 15px;
+}
+.modal-body {
+  padding: 10px 15px;
+}
+.modal-body {
+  padding: 10px 15px;
+}
