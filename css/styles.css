@@ -641,7 +641,6 @@ address {
   left: 64px;
   top: 458px;
   z-index: 999;
-  color: #e5e5e5;
 }
 .terms-contitions {
   font-size: 14px;
@@ -666,6 +665,7 @@ address {
   box-shadow: none;
   outline: none;
 }
+
 .order-hover:hover > .person-contacts,
 .order-hover:focus > .person-contacts,
 .order-hover:active > .person-contacts {

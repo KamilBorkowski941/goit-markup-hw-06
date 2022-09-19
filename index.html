@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -617,84 +617,96 @@
       </footer>
       <!--informacje bazowe na temat firmy- tak zwany footer-->
       <div class="backdrop is-hidden" data-modal>
-        <div class="order">
-          <div class="order-header">
-            <div class="title">Fill Out an Order Form</div>
-            <button class="close-button" data-modal-close>&times;</button>
-          </div>
-          <label for="order-name" class="order-hover">
-            Name
-            <svg class="person-contacts icon-person-placement">
-              <use
-                xlink:href="./images/icons.svg#icon-person-contacts"
-                width="12"
-                height="12"
-              ></use>
-            </svg>
-            <input
-              type="text"
-              name="user-name"
-              class="order-input"
-              id="order-name"
-            />
-          </label>
-          <label for="order-mobile" class="order-hover">
-            Mobile
-            <svg class="person-contacts icon-phone-placement">
-              <use
-                xlink:href="./images/icons.svg#icon-phone-contacts"
-                width="13"
-                height="13"
-              ></use>
-            </svg>
-            <input
-              type="text"
-              name="user-name"
-              class="order-input"
-              id="order-mobile"
-            />
-          </label>
-          <label for="order-email" class="order-hover">
-            E-mail
-            <svg class="person-contacts icon-email-placement">
-              <use
-                xlink:href="./images/icons.svg#icon-email-contacts"
-                width="15"
-                height="12"
-              ></use>
-            </svg>
-            <input
-              type="text"
-              name="user-name"
-              class="order-input"
-              id="order-email"
-            />
-          </label>
-          <label>
-            Comment
-            <textarea
-              name="Comment"
-              placeholder="Write your comment ..."
-              class="order-input order-comment"
-            >
-            </textarea>
-          </label>
-          <label class="terms-contitions">
-            <input type="checkbox" />
-            <svg class="check-contacts">
-              <use
-                xlink:href="./images/icons.svg#icon-check-contacts"
-                width="11"
-                height="8"
-              ></use>
-            </svg>
-            <span class="checkmark"></span> I have read and accept
-            <a href="#" class="text-blue">Terms</a> and
-            <a href="#" class="text-blue">Conditions of services</a>
-          </label>
-          <label>
-            <button type="submit" class="order-button">Send</button>
-          </label>
+        <div>
+          <form class="order">
+            <div class="order-header">
+              <div class="title">Fill Out an Order Form</div>
+              <button class="close-button" data-modal-close>&times;</button>
+            </div>
+            <label for="order-name" class="order-hover">
+              Name
+              <svg class="person-contacts icon-person-placement">
+                <use
+                  xlink:href="./images/icons.svg#icon-person-contacts"
+                  width="12"
+                  height="12"
+                ></use>
+              </svg>
+              <input
+                required
+                type="text"
+                name="user-name"
+                class="order-input"
+                id="order-name"
+                pattern="^[a-zA-ZąęćóśÆØÅ\-]+\s[a-zA-ZąęćóśÆØÅ\-]+$"
+                title="Username must contain at least two words separated by a space. If duble first or second name use Hyphen (-) without space"
+              />
+            </label>
+            <label for="order-mobile" class="order-hover">
+              Mobile
+              <svg class="person-contacts icon-phone-placement">
+                <use
+                  xlink:href="./images/icons.svg#icon-phone-contacts"
+                  width="13"
+                  height="13"
+                ></use>
+              </svg>
+              <input
+                required
+                type="tel"
+                name="user-mobile"
+                class="order-input"
+                id="order-mobile"
+                pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+                title="Please write your country code and mobie number"
+              />
+            </label>
+            <label for="order-email" class="order-hover">
+              E-mail
+              <svg class="person-contacts icon-email-placement">
+                <use
+                  xlink:href="./images/icons.svg#icon-email-contacts"
+                  width="15"
+                  height="12"
+                ></use>
+              </svg>
+              <input
+                required
+                type="email"
+                name="user-email"
+                class="order-input"
+                id="order-email"
+                pattern="^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$"
+                title="Please write your E-mail"
+              />
+            </label>
+            <label>
+              Comment
+              <textarea
+                name="Comment"
+                placeholder="Write your comment ..."
+                class="order-input order-comment"
+                title="Please write your comment"
+              >
+              </textarea>
+            </label>
+            <label class="terms-contitions">
+              <input type="checkbox" />
+              <svg class="check-contacts">
+                <use
+                  xlink:href="./images/icons.svg#icon-check-contacts"
+                  width="11"
+                  height="8"
+                ></use>
+              </svg>
+              <span class="checkmark"></span> I have read and accept
+              <a href="#" class="text-blue">Terms</a> and
+              <a href="#" class="text-blue">Conditions of services</a>
+            </label>
+            <label>
+              <button type="submit" class="order-button">Send</button>
+            </label>
+          </form>
         </div>
       </div>
     </div>
